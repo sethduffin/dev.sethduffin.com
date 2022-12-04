@@ -1,0 +1,33 @@
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #ffffff;
+}
+
+#container {
+    transform: translate3d(0,0,0);
+}
+
+body {
+    background: unset !important;
+}
+
+body * {
+    background-color: unset !important;
+}
+
+div {
+    overflow: visible !important;
+}
+
+canvas {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 21%) 0px 5px 41px;
+}
+
+table {
+    display: none;
+}
