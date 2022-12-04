@@ -48,3 +48,11 @@
 .page-link__arrow {
   color: gray;
 }
+
+.page-link h3 {
+  font-weight: 600;
+}
+
+.page-link p {
+  font-size: 0.9em;
+}

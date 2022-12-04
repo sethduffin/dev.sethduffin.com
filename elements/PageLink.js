@@ -8,7 +8,7 @@ export class PageLink extends HTMLElement {
   
     this.innerHTML = `
       <li class="page-link">
-        <a href="${path}" class="${disabled && 'disabled'}">
+        <a href="${path}" class="${disabled ? 'disabled' : ''}">
           <div class="page-link__text-container">
             <h3>${name}</h3>
             <p>${description}</p>
