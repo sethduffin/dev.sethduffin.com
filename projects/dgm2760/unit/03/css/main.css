@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  --primary-color: #CBA075;
+  --secondary-color: #e2c09b;
+  --text-color: #555555;
+  --light-text-color: #959595;
+  --background-color: #E7E7E7;
+  --highlight-color: #FFF9ED;
+  --border-radius: 10px;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+header {
+  background-image: url('../images/header.jpg');
+  background-size: 100%;
+  background-position-y: center;
+  height: 200px;
+  padding: 1em;
+  color: white;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h1 {
+  margin: 1em 0 -0.5em 0;
+  color: var(--primary-color);
+}
+
+h3 {
+  margin: 1.5em 0 0.5em 0;
+  color: var(--secondary-color);
+}
+
+li {
+  color: var(--text-color);
+  margin: 0.25em 0;
+}
+
+p {
+  color: var(--text-color);
+  margin: 0.5em 0;
+}
+
+.game-content {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.game-item-container {
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  margin: 0 0.5em;
+  transition: 0.3s transform, 0.5s background;
+}
+
+.game-item-container:hover {
+  transform: scale(102%);
+}
+
+.guess-container {
+  flex: 1;
+  max-width: 200px;
+}
+
+.guess-container input {
+  border: none;
+  outline: none;
+  font-size: 2.25em;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  padding: 0.5em;
+  padding-left: 1em;
+  width: 100%;
+  flex: 1;
+}
+
+.guess-container button {
+  background-color: var(--primary-color);
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s letter-spacing, 0.2s background-color;
+  justify-content: center;
+}
+
+.guess-container button:hover {
+  letter-spacing: 3px;
+}
+
+.guess-container button:active {
+  background-color: var(--secondary-color);
+}
+
+.feedback-container {
+  flex: 1;
+  padding: 1em;
+  flex-direction: row;
+}
+
+.feedback-item {
+  flex: 1;
+  margin: 0 1em;
+}
+
+.feedback-item__hint {
+  flex: 3;
+}
+
+.feedback-label {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--light-text-color);
+}
+
+.feedback-value__try-count {
+  font-size: 4em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.feedback-value__hint {
+  margin: 1em 0;
+}
+
+.award-container {
+  flex: none;
+}
+
+.award-container img {
+  width: 108px;
+  height: 108px;
+  padding: 1em;
+  align-self: center;
+}
+
+.highlight {
+  background: var(--highlight-color);
+  transform: scale(102%);
+}
+
+footer {
+  margin-top: 1em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1em 2em;
+}

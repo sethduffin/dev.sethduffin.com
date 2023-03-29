@@ -56,3 +56,7 @@
 .page-link p {
   font-size: 0.9em;
 }
+
+.page-link .preview {
+  width: 300px;
+}

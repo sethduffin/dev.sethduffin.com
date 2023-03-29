@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 10</title>
+    <link href="css/main.css" rel="stylesheet" >
+  </head>
+  <body>
+    <div class="inner-container">
+      <header>
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h2>
+      </header>
+      <main>
+        <h1>Hotel California</h1>
+        <h3>What I Learned</h3>
+        <ul>
+          <li>Create an external JSON file</li>
+          <li>Load the JSON file using the Fetch API</li>
+          <li>How to use a try...catch block</li>
+          <li>How to use a async...await to make asynchronous function calls</li>
+          <li>How to retrieve and store resolved Promise data</li>
+          <li>Display data from the JSON file on the web page using three different buttons</li>
+        </ul>
+
+        <h3>Select A Hotel</h3>
+        <div id="hotelButtons"></div>
+
+        <div id="hotelDetails" class="hide">
+          <h3 id="hotelName"></h3>
+          <div class="detail-text">
+            <p>Address: <span id="hotelAddress"></span></p>
+            <p>Number of Rooms: <span id="hotelRoomCount"></span></p>
+            <p>Gym Available: <span id="hotelHasGym"></span></p>
+            <p>Room Types: <span id="hotelRoomTypes"></span></p>
+          </div>
+          <div id="hotelImage">
+        </div>
+      </main>
+      <footer><p>Assignment for DGM 2760 by Seth Duffin</p></footer>
+    </div>
+  </body>
+  <script src="js/main.js" type="module"></script>
+</html>

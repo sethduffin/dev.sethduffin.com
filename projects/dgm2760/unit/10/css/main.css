@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  --primary-color: #609595;
+  --secondary-color: #87c1c1;
+  --text-color: #555555;
+  --background-color: #E7E7E7;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url('../images/header.jpg');
+  background-size: 100%;
+  background-position-y: center;
+  height: 200px;
+  padding: 1em;
+  color: var(--primary-color);
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h1 {
+  margin: 1em 0 -0.5em 0;
+  color: var(--primary-color);
+}
+
+h3 {
+  margin: 1.5em 0 0.5em 0;
+  color: var(--secondary-color);
+}
+
+li {
+  color: var(--text-color);
+  margin: 0.25em 0;
+}
+
+p {
+  color: var(--text-color);
+  margin: 0.5em 0;
+}
+
+footer {
+  margin-top: 2em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1em 2em;
+}
+
+button {
+  background: var(--secondary-color);
+  border: none;
+  padding: 0.75em 1em;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius:  0.5em;
+  margin: 0.25em;
+  transition: 0.2s transform;
+  width: 200px;
+}
+
+button:hover {
+  transform: scale(102%);
+}
+
+button:active {
+  opacity: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+#hotelImage {
+  background-size: 100%;
+  background-position-y: center;
+  height: 300px;
+}
+
+.detail-text {
+  margin: 1em 0 2em 0;
+}

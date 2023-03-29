@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 03</title>
+    <link href="css/main.css" rel="stylesheet" >
+  </head>
+  <body>
+    <div class="inner-container">
+      <header>
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h2>
+      </header>
+      <main>
+        <h1>Hi/Lo Guessing Game</h1>
+        <h3>What I Learned</h3>
+        <ul>
+          <li>Implement functions</li>
+          <li>Implement a multi level if-then-else</li>
+          <li>Use innerText to provide game feedback</li>
+          <li>Implement a switch statement</li>
+          <li>Dynamically load a graphic</li>
+          <li>Create and append an image element</li>
+        </ul>
+
+        <h3>Instructions</h3>
+        <p>
+          In this game you try to <b>guess a number between 1 and 15</b> in as few tries as possible. 
+          You will be rewarded with a ribbon for the number of tries it takes. 
+          Good luck! If you want to play again, refresh the page.
+        </p>
+
+        <div class="game-content">
+          <div class="game-item-container guess-container">
+            <input type="number" placeholder="5" id="guessValue" />
+            <button id="guessButton">Guess</button>
+          </div>
+          <div class="game-item-container feedback-container">
+            <div class="feedback-item feedback-item__tries">
+              <p class="feedback-label">Tries</p>
+              <p class="feedback-value feedback-value__try-count" id="tryCount">0</p>
+            </div>
+            <div class="feedback-item feedback-item__hint">
+              <p class="feedback-label">Hint</p>
+              <p class="feedback-value feedback-value__hint" id="hintMessage">Guess a number to receive a hint...</p>
+            </div>
+          </div>
+          <div class="game-item-container award-container">
+            <img id="awardImage" src="./images/ribbon-empty.svg" />
+          </div>
+        </div>
+      </main>
+      <footer><p>Assignment for DGM 2760 by Seth Duffin</p></footer>
+    </div>
+  </body>
+  <script src="js/main.js" type="module"></script>
+</html>

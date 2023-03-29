@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  --primary-color: #4a6295;
+  --primary-color-active: #7c91bd;
+  --secondary-color: #555555;
+  --background-color: #E7E7E7;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  padding: 1.5em 1em;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+header {
+  background-image: url('../images/header.jpg');
+  background-size: 100%;
+  background-position-y: 20%;
+  height: 300px;
+  padding: 2em;
+  color: var(--primary-color);
+}
+
+h3 {
+  margin: 1.5em 0 0.5em 0;
+  color: var(--primary-color);
+}
+
+li {
+  color: var(--secondary-color);
+  margin: 0.25em 0;
+}
+
+p {
+  color: var(--secondary-color);
+  margin: 0.5em 0;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 1em 0;
+  transition: 0.3s transform, 0.2s background-color;
+}
+
+button:hover {
+  transform: scale(103%);
+}
+
+button:active {
+  background-color: var(--primary-color-active);
+}
+
+footer {
+  margin-top: 2em;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  padding: 1em;
+}

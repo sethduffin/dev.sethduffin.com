@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 07</title>
+    <link href="css/main.css" rel="stylesheet" >
+  </head>
+  <body>
+    <div class="inner-container">
+      <header>
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h2>
+      </header>
+      <main>
+        <h1>Pizza Order Form</h1>
+        <h3>What I Learned</h3>
+        <ul>
+          <li>Create an object literal with properties and methods</li>
+          <li>Set the properties in an object</li>
+          <li>Access the properties in an object</li>
+          <li>Access the methods of an object</li>
+          <li>Use math operators</li>
+          <li>Use template literals</li>
+          <li>Use querySelector and textContent to dynamically change text on the screen</li>
+        </ul>
+        <div class="column-group">
+          <div class="column">
+            <h3>Crust Options</h3>
+            <label>
+              <input type="radio" name="crust" id="thin" checked>
+                Thin
+            </label>
+            <label>
+              <input type="radio" name="crust" id="thick">
+              Thick
+            </label>
+            <h3>Topping Options</h3>
+            <label>
+              <input type="radio" name="topping" id="sausage" checked>
+              Sausage
+            </label>
+            <label>
+              <input type="radio" name="topping" id="pepperoni">
+              Pepperoni
+            </label>
+            <h3>Size Options</h3>
+            <label>
+              <input type="radio" name="size" id="small" checked>
+              Small
+            </label>
+            <label>
+              <input type="radio" name="size" id="large">
+              Large
+            </label>
+          </div>
+          <div class="column">
+            <h3>Time to Eat</h3>
+            <button id="buildPizza">Build Pizza</button>
+            <h3>Shopping List</h3>
+            <button id="shoppingList">Shopping List</button>
+            <h3>Messages back to the user</h3>
+            <p id="message"></p>
+          </div>
+        </div>
+      </main>
+      <footer><p>Assignment for DGM 2760 by Seth Duffin</p></footer>
+    </div>
+  </body>
+  <script src="js/main.js" type="module"></script>
+</html>

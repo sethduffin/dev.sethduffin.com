@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+  font-family: 'Inter', sans-serif;
+  --primary-color: #3b798f;
+  --secondary-color: #83BACE;
+  --text-color: #555555;
+  --background-color: #E7E7E7;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url('../images/header.jpg');
+  background-size: 100%;
+  background-position-y: center;
+  height: 200px;
+  padding: 1em;
+  color: white;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h1 {
+  margin: 1em 0 -0.5em 0;
+  color: var(--primary-color);
+}
+
+h3 {
+  margin: 1.5em 0 0.5em 0;
+  color: var(--secondary-color);
+}
+
+li {
+  color: var(--text-color);
+  margin: 0.25em 0;
+}
+
+p {
+  color: var(--text-color);
+  margin: 0.5em 0;
+}
+
+footer {
+  margin-top: 1em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 1em 2em;
+}
+
+.input-group {
+  display: flex;
+  margin: 0 -0.5em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 0.5em;
+}
+
+textarea {
+  border: solid 1px var(--background-color);
+  color: var(--text-color);
+  font-size: 1em;
+  padding: 0.75em;
+  border-radius: 8px;
+  min-height: 82px;
+  resize: none;
+}
+
+p span {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+button {
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 0.75em 2em;
+  color: white;
+  font-size: 1.25em;
+  align-self: center;
+  margin: 2em;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.5s transform;
+}
+
+button:hover {
+  transform: scale(103%);
+}
+
+button:active {
+  opacity: 80%;
+}
+
+.story {
+  margin: 0 4em 2em 4em;
+  line-height: 160%;
+  font-size: 1.25em;
+}
+
+.hide {
+  display: none;
+}

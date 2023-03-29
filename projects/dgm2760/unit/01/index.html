@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 01</title>
+    <link href="css/main.css" rel="stylesheet" >
+  </head>
+  <body>
+    <header>
+      <h1 id="companyName"></h1>
+      <h2 id="companySlogan"></h2>
+    </header>
+    <main>
+      <h3>What I Learned</h3>
+      <ul>
+        <li>Build a simple webpage with a header, main</li>
+        <li>Build a simple webpage with a header, main and footer</li>
+        <li>Find and correctly resize an image to be loaded into the header using CSS</li>
+        <li>Use JavaScript to insert text into an HTML element</li>
+        <li>Use JavaScript to insert the current date into a web page</li>
+        <li>Style a page using CSS</li>
+        <li>Push code to a GitHub repository</li>
+        <li>Deploy a webpage using Netlify</li>
+      </ul>
+      <h3>Today is 
+        <script>
+          const date = new Date();
+          const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+          document.write(date.toLocaleDateString(undefined, options));
+        </script>
+      </h3>
+      <button onclick="doPrompt();">Get Started</button>
+      <p id="welcomeMessage"></p>
+    </main>
+    <footer><p>Assignment for DGM 2760 by Seth Duffin</p></footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>

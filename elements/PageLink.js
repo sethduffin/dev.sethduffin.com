@@ -1,11 +1,12 @@
 export class PageLink extends HTMLElement {
   connectedCallback() {
+    this.params = getAttributesFrom(this);
     this.render();
   }
 
   render() {
-    const { name, path, description = '', disabled } = getAttributesFrom(this);
-  
+    const { name, path, description = '', disabled, preview = false } = this.params;
+
     this.innerHTML = `
       <li class="page-link">
         <a href="${path}" class="${disabled ? 'disabled' : ''}">

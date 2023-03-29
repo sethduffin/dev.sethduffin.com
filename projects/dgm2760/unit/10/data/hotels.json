@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Marriott",
+    "address": "258 Broad Street",
+    "roomCount": 50,
+    "hasGym": true,
+    "image": "images/hotel1.jpg",
+    "roomTypes": [
+      "King",
+      "Queen",
+      "Double"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Sheraton",
+    "address": "23 Main Plaza",
+    "roomCount": 23,
+    "hasGym": false,
+    "image": "images/hotel2.jpg",
+    "roomTypes": [
+      "Suite",
+      "King",
+      "Queen"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Hilton",
+    "address": "Braven Boulevard",
+    "roomCount": 3,
+    "hasGym": true,
+    "image": "images/hotel3.jpg",
+    "roomTypes": [
+      "Double",
+      "Queen"
+    ]
+  }
+]

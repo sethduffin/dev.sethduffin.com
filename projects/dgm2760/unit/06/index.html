@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 06</title>
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="inner-container">
+      <header>
+        <h1 id="title"></h1>
+        <h2 id="subtitle"></h2>
+      </header>
+      <main>
+        <h1>Nonsense Story</h1>
+        <h3>What I Learned</h3>
+        <ul>
+          <li>Extract text content from him elements</li>
+          <li>Convert a string into an array</li>
+          <li>Access elements of an array</li>
+          <li>Escape string characters</li>
+          <li>String Concatenation</li>
+          <li>Change a string to all lower case</li>
+          <li>Wild character substitution</li>
+        </ul>
+
+        <div class="input-group">
+          <div class="input-container">
+            <h3>Three Nouns</h3>
+            <textarea id="nounInput"></textarea>
+          </div>
+
+          <div class="input-container">
+            <h3>Three Adjective</h3>
+            <textarea id="adjectiveInput"></textarea>
+          </div>
+
+          <div class="input-container">
+            <h3>Three Verbs</h3>
+            <textarea id="verbInput"></textarea>
+          </div>
+        </div>
+
+        <button id="generateStoryButton">Generate Story</button>
+
+        <p class="story hide">
+          When the <span class="adjective">[adjective]</span>
+          <span class="noun">[noun]</span> arrived at work, he forgot his
+          <span class="noun">[noun]</span>. So, it
+          <span class="verb">[verb]</span> back home. On the way home, a
+          <span class="adjective">[adjective]</span> <span class="noun">[noun]</span>
+          <span class="verb">[verb]</span> right past and <span class="verb">[verb]</span> in front of his eyes.
+        </p>
+      </main>
+      <footer><p>Assignment for DGM 2760 by Seth Duffin</p></footer>
+    </div>
+  </body>
+  <script src="js/main.js" type="module"></script>
+</html>
